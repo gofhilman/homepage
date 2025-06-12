@@ -1,2 +1,3 @@
 # frontend-template
-This is a template for basic package configurations.
+
+This is a template for frontend package configurations.
