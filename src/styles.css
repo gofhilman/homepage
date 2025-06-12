@@ -1,5 +1,7 @@
 @import "tailwindcss";
-@import "../node_modules/modern-normalize/modern-normalize.css";
+
+/* Choose modern-normalize instead of tailwind when writing vanilla css */
+/* @import "../node_modules/modern-normalize/modern-normalize.css"; */
 
 :root {
   line-height: 1.5;
