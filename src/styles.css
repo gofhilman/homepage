@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
-/* Choose modern-normalize instead of tailwind when writing vanilla css */
+/* Uncomment the following css normalize and reset stylesheet when writing vanilla css */
+
+/* normalize stylesheet */
 /* @import "../node_modules/modern-normalize/modern-normalize.css"; */
 
-:root {
+/* reset stylesheet */
+/* :root {
   line-height: 1.5;
 }
 
@@ -37,4 +40,4 @@ h5 {
 img {
   display: block;
   max-inline-size: 100%;
-}
+} */
