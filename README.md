@@ -1,3 +1,3 @@
-# frontend-template
+# Home Page
 
-This is a template for frontend package configurations.
+A home page to showcase a little bit about me and my portfolio
