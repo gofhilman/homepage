@@ -20,12 +20,12 @@
         </ul>
       </nav>
     </header>
-    <main class="mt-[70px]">
-      <section class="grid" id="about">
-        <h2 class="flex flex-col text-5xl font-semibold">
+    <main class="mt-[100px]">
+      <section class="grid grid-flow-col grid-rows-2 auto-cols-fr gap-x-[50px]" id="about">
+        <h2 class="flex flex-col text-4xl/snug font-semibold">
           <span>Hi, I'm</span>
           <span>Hilman Fikry</span>
-          <span><span>a </span><span id="typing"></span><span>|</span></span>
+          <span><span>a </span><span id="typing"></span><span id="cursor"></span></span>
         </h2>
         <p>
           I'm a developer from Indonesia with roots in physics. I graduated as
@@ -33,10 +33,11 @@
           funded master's in Quantum Science and Technology at the University of
           Barcelona. Now I craft the web, daily.
         </p>
-        <div>
+        <div class="row-span-full">
           <img
             alt="A potrait of Hilman Fikry"
             src="./assets/portrait-hilman.jpg"
+            class="max-w-[200px]"
           />
           <nav><a href="#contact">Contact me</a></nav>
         </div>
