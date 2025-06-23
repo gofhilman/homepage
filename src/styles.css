@@ -1,12 +1,24 @@
 @import "tailwindcss";
 
+@layer base {
+  body {
+    @apply relative z-0 min-h-screen;
+  }
+  body::before {
+    @apply absolute inset-0 -z-2 bg-slate-900 content-[''];
+  }
+  body::after {
+    @apply absolute inset-0 -z-1 bg-white blur-lg content-[''];
+  }
+}
+
 @layer components {
   .progress-bar::before {
     @apply absolute inset-x-[50px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
   }
 
   .progress-bar::after {
-    @apply absolute inset-x-[50px] bottom-0 h-px bg-white content-[''];
+    @apply absolute inset-x-[50px] bottom-0 h-px bg-black content-[''];
 
     transform-origin: center left;
     animation: progress linear;
