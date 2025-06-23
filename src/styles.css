@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@layer components {
+  .progress-bar::after {
+    position: absolute;
+    inset: auto 50px 0;
+    height: 1px;
+    background: white;
+
+    transform-origin: center left;
+    animation: progress linear;
+    animation-timeline: scroll(root block);
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+}
+
 /* Uncomment the following css normalize and reset stylesheet when writing vanilla css */
 
 /* normalize stylesheet */
