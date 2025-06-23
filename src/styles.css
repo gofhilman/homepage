@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @layer components {
+  .progress-bar::before {
+    @apply absolute inset-x-[50px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
+  }
+
   .progress-bar::after {
-    position: absolute;
-    inset: auto 50px 0;
-    height: 1px;
-    background: white;
+    @apply absolute inset-x-[50px] bottom-0 h-px bg-white content-[''];
 
     transform-origin: center left;
     animation: progress linear;
