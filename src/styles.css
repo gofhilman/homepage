@@ -25,10 +25,22 @@
   }
   .progress-bar::after {
     @apply absolute inset-x-[50px] bottom-0 h-px bg-slate-950 content-[''];
-
     transform-origin: center left;
     animation: progress linear;
     animation-timeline: scroll(root block);
+  }
+
+  .contact-button {
+    padding: 5px 25px 8px 25px;
+    border-radius: 40px;
+    box-shadow:
+      inset 0 2px 5px rgba(255, 255, 255, 0.1),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.4),
+      0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .separator::before {
+    @apply absolute inset-x-[40%] h-min border-t-[3px] border-double border-slate-500 content-[''];
   }
 }
 

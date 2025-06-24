@@ -22,7 +22,7 @@
     </header>
     <main class="relative z-0 pt-[100px]">
       <section
-        class="grid min-h-screen grid-flow-col grid-cols-[2fr_1fr] grid-rows-2 items-start gap-x-[40px] px-[150px]"
+        class="grid min-h-[calc(100vh-100px)] grid-flow-col grid-cols-[2fr_1fr] grid-rows-2 items-start gap-x-[40px] px-[150px]"
         id="about"
       >
         <h2 class="flex flex-col self-center text-5xl/snug font-semibold">
@@ -40,8 +40,10 @@
           funded master's in Quantum Science and Technology at the University of
           Barcelona. Now I craft the web, daily.
         </p>
-        <div class="row-span-full mt-[100px] justify-self-center">
-          <div class="relative my-[50px]">
+        <div
+          class="row-span-full mt-[100px] flex flex-col items-center gap-[100px] justify-self-center"
+        >
+          <div class="relative">
             <img
               src="./assets/portrait-hilman.jpg"
               alt="A portrait of Hilman Fikry"
@@ -51,10 +53,16 @@
               class="absolute top-5 left-5 -z-1 size-full animate-[vertical-swing_3s_ease-in-out_500ms_infinite_alternate] rounded-sm bg-slate-500"
             ></div>
           </div>
-          <nav><a href="#contact">Contact me</a></nav>
+          <nav>
+            <a
+              class="contact-button block bg-slate-500 text-3xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600"
+              href="#contact"
+              >Contact me</a
+            >
+          </nav>
         </div>
       </section>
-      <section id="projects">
+      <section class="separator" id="projects">
         <h2>Featured Projects</h2>
         <h3>Web development</h3>
         <div id="web-development">
@@ -79,7 +87,7 @@
           </article> -->
         </div>
       </section>
-      <section id="skills">
+      <section class="separator" id="skills">
         <h2>Current Skills</h2>
         <p>
           Here are the programming languages and tools I typically work with—and
@@ -106,7 +114,7 @@
           </figure> -->
         </div>
       </section>
-      <section id="contact">
+      <section class="separator" id="contact">
         <h2>Hilman Fikry <span id="arrow-down"></span></h2>
         <p>A web developer from Indonesia</p>
         <article>
