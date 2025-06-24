@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply relative z-0 min-h-screen;
+    @apply relative min-h-screen text-slate-900;
   }
   body::before {
     @apply absolute inset-0 -z-2 bg-slate-900 content-[''];
@@ -10,15 +10,21 @@
   body::after {
     @apply absolute inset-0 -z-1 bg-white blur-lg content-[''];
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-slate-950;
+  }
 }
 
 @layer components {
   .progress-bar::before {
     @apply absolute inset-x-[50px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
   }
-
   .progress-bar::after {
-    @apply absolute inset-x-[50px] bottom-0 h-px bg-black content-[''];
+    @apply absolute inset-x-[50px] bottom-0 h-px bg-slate-950 content-[''];
 
     transform-origin: center left;
     animation: progress linear;
@@ -29,6 +35,11 @@
 @keyframes progress {
   from {
     transform: scaleX(0);
+  }
+}
+@keyframes vertical-swing {
+  to {
+    transform: translateY(30px);
   }
 }
 

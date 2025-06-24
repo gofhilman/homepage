@@ -8,7 +8,7 @@
   </head>
   <body class="px-[50px]">
     <header
-      class="progress-bar fixed inset-x-0 top-0 flex items-center justify-between bg-white/20 px-[50px] py-[15px] backdrop-blur-xs"
+      class="progress-bar fixed inset-x-0 top-0 z-1 flex items-center justify-between bg-white/20 px-[50px] py-[15px] backdrop-blur-sm"
     >
       <h1 class="mr-10 text-3xl font-medium whitespace-nowrap">Hilman Fikry</h1>
       <nav>
@@ -20,25 +20,37 @@
         </ul>
       </nav>
     </header>
-    <main class="pt-[100px]">
-      <section class="grid grid-flow-col grid-rows-2 auto-cols-fr gap-x-[50px] px-[100px] items-center " id="about">
-        <h2 class="flex flex-col text-5xl/snug font-semibold">
+    <main class="relative z-0 pt-[100px]">
+      <section
+        class="grid min-h-screen grid-flow-col grid-cols-[2fr_1fr] grid-rows-2 items-start gap-x-[40px] px-[150px]"
+        id="about"
+      >
+        <h2 class="flex flex-col self-center text-5xl/snug font-semibold">
           <span>Hi, I'm</span>
           <span>Hilman Fikry</span>
-          <span><span>a </span><span id="typing"></span><span id="cursor"></span></span>
+          <span
+            ><span>a </span><span id="typing"></span><span id="cursor"></span
+          ></span>
         </h2>
-        <p>
+        <p
+          class="mr-30 rounded-2xl border-l-10 border-slate-500 px-10 py-5 text-xl/normal"
+        >
           I'm a developer from Indonesia with roots in physics. I graduated as
           valedictorian from Institut Teknologi Bandung and earned a fully
           funded master's in Quantum Science and Technology at the University of
           Barcelona. Now I craft the web, daily.
         </p>
-        <div class="row-span-full justify-self-center">
-          <img
-            alt="A potrait of Hilman Fikry"
-            src="./assets/portrait-hilman.jpg"
-            class="max-w-[200px]"
-          />
+        <div class="row-span-full mt-[100px] justify-self-center">
+          <div class="relative my-[50px]">
+            <img
+              src="./assets/portrait-hilman.jpg"
+              alt="A portrait of Hilman Fikry"
+              class="max-w-[300px] animate-[vertical-swing_3s_ease-in-out_infinite_alternate] rounded-sm"
+            />
+            <div
+              class="absolute top-5 left-5 -z-1 size-full animate-[vertical-swing_3s_ease-in-out_500ms_infinite_alternate] rounded-sm bg-slate-500"
+            ></div>
+          </div>
           <nav><a href="#contact">Contact me</a></nav>
         </div>
       </section>
