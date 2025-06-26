@@ -24,7 +24,7 @@
     @apply text-3xl font-medium;
   }
   h4 {
-    @apply justify-self-stretch text-2xl text-white;
+    @apply mx-5 mt-6 justify-self-stretch border-l-3 py-1 pl-5 text-2xl text-white;
   }
 
   iframe {
@@ -41,6 +41,12 @@
     transform-origin: center left;
     animation: progress linear;
     animation-timeline: scroll(root block);
+  }
+
+  .shadowing {
+    box-shadow:
+      inset 0 2px 5px rgba(255, 255, 255, 0.5),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
 
   .contact-button {
@@ -66,25 +72,43 @@
   }
 
   #projects article {
-    @apply grid w-[505px] rounded-lg bg-slate-500 text-white pb-2;
+    @apply grid w-[505px] items-start rounded-lg bg-slate-500 text-white;
     box-shadow:
-      inset 0 4px 8px rgba(255, 255, 255, 0.2),
-      inset 0 -4px 8px rgba(0, 0, 0, 0.5);
+      inset 0 2px 5px rgba(255, 255, 255, 0.5),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
   #projects > div {
-    @apply mx-3 grid grid-cols-[repeat(auto-fit,minmax(550px,1fr))] justify-items-center gap-y-20;
+    @apply mx-3 grid grid-cols-[repeat(auto-fit,minmax(550px,1fr))] justify-items-center gap-y-10;
   }
   #projects article > img {
     @apply rounded-t-lg;
   }
 
+  #projects article > p {
+    @apply px-5 py-2;
+  }
+
   #projects article > div:last-child {
-    @apply flex p-5 justify-between;
+    @apply mx-4 flex border-t-2 py-5 text-2xl;
+  }
+  #projects article > div:last-child > * {
+    @apply mx-6 flex-1 bg-white/25 text-center;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    box-shadow:
+      inset 0 2px 5px rgba(255, 255, 255, 0.5),
+      inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
 
   .white-icon {
     filter: brightness(0) invert(1);
-    @apply inline-block w-[18px];
+    @apply inline-block w-[20px];
+  }
+
+  .big-icon {
+    filter: brightness(0) invert(1);
+    @apply inline-block w-[30px];
   }
 
   #projects > h2,
@@ -98,7 +122,11 @@
   }
 
   .project-tools {
-    @apply p-5 flex flex-wrap gap-5;
+    @apply flex flex-wrap gap-5 px-5 py-3 text-lg;
+  }
+
+  .center-icon {
+    @apply flex items-center justify-center gap-[6px];
   }
 }
 
