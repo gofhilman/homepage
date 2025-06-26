@@ -30,6 +30,10 @@
   iframe {
     @apply rounded-t-lg;
   }
+
+  figure > img {
+    @apply w-30;
+  }
 }
 
 @layer components {
