@@ -21,16 +21,15 @@
     @apply pt-20 text-5xl/snug font-semibold;
   }
   h3 {
-    @apply mx-10 text-3xl font-medium;
+    @apply text-3xl font-medium;
   }
   h4 {
-    @apply text-2xl justify-self-stretch text-white;
+    @apply justify-self-stretch text-2xl text-white;
   }
 
   iframe {
     @apply rounded-t-lg;
   }
-
 }
 
 @layer components {
@@ -53,15 +52,27 @@
       0 0 10px rgba(0, 0, 0, 0.3);
   }
 
+  .separator {
+    @apply relative;
+  }
   .separator::before {
-    @apply absolute inset-x-[40%] h-min border-t-[3px] border-double border-slate-500 content-[''];
+    @apply absolute inset-x-[40%] h-min border-t-[10px] border-double border-slate-500 content-[''];
+  }
+
+  #projects,
+  #skills,
+  #contact {
+    @apply px-[100px];
   }
 
   #projects article {
-    @apply grid justify-items-center w-[505px] rounded-lg bg-slate-500 text-white;
+    @apply grid w-[505px] justify-items-center rounded-lg bg-slate-500 text-white pb-2;
+    box-shadow:
+      inset 0 4px 8px rgba(255, 255, 255, 0.2),
+      inset 0 -4px 8px rgba(0, 0, 0, 0.5);
   }
   #projects > div {
-    @apply mx-10 grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-5;
+    @apply mx-3 grid grid-cols-[repeat(auto-fit,minmax(550px,1fr))] justify-items-center gap-y-20;
   }
   #projects article > img {
     @apply rounded-t-lg;
@@ -69,7 +80,17 @@
 
   .white-icon {
     filter: brightness(0) invert(1);
-    @apply w-[18px] inline-block;
+    @apply inline-block w-[18px];
+  }
+
+  #projects > h2,
+  #skills > h2 {
+    @apply w-[200px] border-b-[8px] border-slate-500 pb-3 whitespace-nowrap;
+  }
+
+  #projects h3,
+  #skills h3 {
+    @apply m-5 w-[200px] rounded-tl-lg border-t-[6px] border-l-[6px] border-slate-500 py-3 pl-5 whitespace-nowrap;
   }
 }
 
