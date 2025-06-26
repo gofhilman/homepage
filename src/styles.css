@@ -24,7 +24,7 @@
     @apply mx-10 text-3xl font-medium;
   }
   h4 {
-    @apply text-2xl justify-self-stretch;
+    @apply text-2xl justify-self-stretch text-white;
   }
 
   iframe {
@@ -58,13 +58,18 @@
   }
 
   #projects article {
-    @apply grid justify-items-center w-[505px] rounded-lg bg-slate-300;
+    @apply grid justify-items-center w-[505px] rounded-lg bg-slate-500 text-white;
   }
   #projects > div {
     @apply mx-10 grid grid-cols-[repeat(auto-fit,minmax(600px,1fr))] gap-5;
   }
   #projects article > img {
     @apply rounded-t-lg;
+  }
+
+  .white-icon {
+    filter: brightness(0) invert(1);
+    @apply w-[18px] inline-block;
   }
 }
 
