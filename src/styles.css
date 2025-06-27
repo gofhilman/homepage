@@ -56,10 +56,10 @@
 
 @layer components {
   .progress-bar::before {
-    @apply absolute inset-x-[50px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
+    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
   }
   .progress-bar::after {
-    @apply absolute inset-x-[50px] bottom-0 h-px bg-slate-950 content-[''];
+    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-px bg-slate-950 content-[''];
     transform-origin: center left;
     animation: progress linear;
     animation-timeline: scroll(root block);
@@ -90,17 +90,17 @@
   #projects,
   #skills,
   #contact {
-    @apply px-[100px];
+    @apply px-[10px] lg:px-[100px];
   }
 
   #projects article {
-    @apply grid w-[505px] items-start rounded-lg bg-slate-500 text-white;
+    @apply grid lg:w-[505px] w-[300px] items-start rounded-lg bg-slate-500 text-white;
     box-shadow:
       inset 0 2px 5px rgba(255, 255, 255, 0.5),
       inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
   #projects > div {
-    @apply mx-3 grid grid-cols-[repeat(auto-fit,minmax(550px,1fr))] justify-items-center gap-y-10;
+    @apply mx-3 grid lg:grid-cols-[repeat(auto-fit,minmax(550px,1fr))] grid-cols-[repeat(auto-fit,minmax(320px,1fr))] justify-items-center gap-y-10;
   }
   #projects article > img {
     @apply rounded-t-lg;

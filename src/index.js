@@ -21,7 +21,7 @@ const videoData = [
   { id: "weather-app", videoId: "gdUczWykRzM" },
   { id: "todo-list", videoId: "vFe7MQMd6aE" },
   { id: "meater", videoId: "Lsx4-RIvzX8" },
-  { id: "mstm", videoId: "gcjxURTSHHU" }
+  { id: "mstm", videoId: "gcjxURTSHHU" },
 ];
 
 window.onYouTubeIframeAPIReady = () => {
@@ -29,8 +29,8 @@ window.onYouTubeIframeAPIReady = () => {
   videoData.forEach((data, index) => {
     // eslint-disable-next-line no-undef
     players[index] = new YT.Player(data.id, {
-      height: "315",
-      width: "505",
+      height: window.innerWidth > 600 ? "315" : "169",
+      width: window.innerWidth > 600 ? "505" : "300",
       videoId: data.videoId,
       playerVars: {
         autoplay: 0,
@@ -40,7 +40,7 @@ window.onYouTubeIframeAPIReady = () => {
       },
     });
   });
-}
+};
 
 // Scroll detection
 window.addEventListener("scroll", () => {
