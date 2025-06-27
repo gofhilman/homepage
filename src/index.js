@@ -29,8 +29,8 @@ window.onYouTubeIframeAPIReady = () => {
   videoData.forEach((data, index) => {
     // eslint-disable-next-line no-undef
     players[index] = new YT.Player(data.id, {
-      height: window.innerWidth > 600 ? "315" : "169",
-      width: window.innerWidth > 600 ? "505" : "300",
+      height: "100%",
+      width: "100%",
       videoId: data.videoId,
       playerVars: {
         autoplay: 0,
