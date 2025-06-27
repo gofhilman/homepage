@@ -295,7 +295,7 @@
       </section>
       <section class="separator pb-20" id="skills">
         <h2>Current Skills</h2>
-        <p>
+        <p class="mx-10 mt-6 border-l-4 border-slate-500 py-1 pl-5 text-xl">
           Here are the programming languages and tools I typically work with—and
           the list just keeps growing! :)
         </p>
@@ -421,6 +421,10 @@
             <figcaption>Prettier</figcaption>
           </figure>
           <figure>
+            <img src="./assets/icons8-wolfram-mathematica-color-100.png" />
+            <figcaption>Mathematica</figcaption>
+          </figure>
+          <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
             />
@@ -446,23 +450,90 @@
           </figure>
         </div>
       </section>
-      <section class="separator pb-20" id="contact">
-        <h2>Hilman Fikry <span id="arrow-down"></span></h2>
-        <p>A web developer from Indonesia</p>
-        <article>
-          <h3>Get in touch</h3>
+      <section
+        class="separator grid grid-flow-col grid-rows-[max-content_1fr] pb-10"
+        id="contact"
+      >
+        <h2>
+          Hilman Fikry
+          <img
+            class="inline-block w-10 translate-y-3"
+            src="./assets/arrow-down-right.svg"
+            alt=""
+          />
+        </h2>
+        <p class="my-3 ml-15 text-xl">A web developer from Indonesia</p>
+        <article class="row-span-full mt-[60px]">
+          <h3 class="text-center">Get in touch</h3>
           <address>
-            <!-- 5 *
             <article>
-              <img src="" alt="">
-              <p></p>
-            </article> -->
+              <a href="mailto:hilman12fikry@gmail.com">
+                <img src="./assets/email.svg" alt="Logo" />
+                <p>Email</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://github.com/gofhilman"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                  alt="Logo"
+                />
+                <p>Github</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.linkedin.com/in/hilman-fikry/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./assets/linkedin-svgrepo-com.svg" alt="Logo" />
+                <p>LinkedIn</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://www.instagram.com/gofhilman/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/iconfinder-social-media-applications-3instagram-4102579_113804.svg"
+                  alt="Logo"
+                />
+                <p>Instagram</p>
+              </a>
+            </article>
+            <article>
+              <a
+                href="https://bsky.app/profile/gofhilman.bsky.social"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./assets/Bluesky_Logo.svg" alt="Logo" />
+                <p>Bluesky</p>
+              </a>
+            </article>
           </address>
         </article>
       </section>
     </main>
-    <footer>
-      <p>Made with ❤️ in Indonesia</p>
+    <footer class="text-center text-white pb-8">
+      <p class="contact-button bg-slate-500 py-3">
+        Copyright &copy; gofhilman 2025 | The code for this website is open
+        source.
+        <a
+          href="https://github.com/gofhilman/homepage"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-blue-200 underline"
+          >View on Github</a
+        >
+      </p>
     </footer>
   </body>
 </html>

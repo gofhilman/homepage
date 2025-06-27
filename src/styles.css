@@ -31,8 +31,26 @@
     @apply rounded-t-lg;
   }
 
+  figure {
+    @apply flex flex-col items-center;
+  }
   figure > img {
-    @apply w-30;
+    @apply w-[100px];
+  }
+
+  figcaption {
+    @apply text-center text-slate-500;
+  }
+
+  address {
+    @apply my-5 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-y-5 text-lg not-italic;
+  }
+
+  address a {
+    @apply flex items-center gap-2;
+  }
+  address img {
+    @apply w-[30px];
   }
 }
 
@@ -131,6 +149,10 @@
 
   .center-icon {
     @apply flex items-center justify-center gap-[6px];
+  }
+
+  #skills > div {
+    @apply mx-20 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] justify-items-center gap-y-10;
   }
 }
 
