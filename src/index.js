@@ -17,11 +17,10 @@ document.body.appendChild(tag);
 
 const players = [];
 const videoData = [
+  { id: "cvgen", videoId: "xHkCBpyH3W8" },
   { id: "battleship", videoId: "Lc8rXUNvyvE" },
   { id: "weather-app", videoId: "gdUczWykRzM" },
   { id: "todo-list", videoId: "vFe7MQMd6aE" },
-  { id: "meater", videoId: "Lsx4-RIvzX8" },
-  { id: "mstm", videoId: "gcjxURTSHHU" },
 ];
 
 window.onYouTubeIframeAPIReady = () => {
