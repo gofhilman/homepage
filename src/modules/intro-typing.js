@@ -46,7 +46,7 @@ class IntroTyping {
 const introTyping = new IntroTyping(
   [
     "Web Developer.",
-    "Front-End Developer.",
+    "Fullstack Developer.",
     "Problem Solver.",
     "Scientific Programmer.",
   ],
