@@ -59,7 +59,7 @@
     @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
   }
   .progress-bar::after {
-    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-px bg-slate-950 content-[''];
+    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-[1.5px] bg-slate-950 content-[''];
     transform-origin: center left;
     animation: progress linear;
     animation-timeline: scroll(root block);
