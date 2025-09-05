@@ -10,7 +10,6 @@ Live: <https://gofhilman.github.io/homepage/>
 - **Embedded Videos**: Featured projects include embedded YouTube videos that play/pause based on scroll visibility.
 - **Responsive Design**: Adapts seamlessly to different screen sizes and devices.
 - **Smooth Navigation**: Scroll-smooth functionality for a better user experience.
-- **Contact Section**: Links to email, GitHub, LinkedIn, Instagram, and Bluesky profiles.
 
 ## Tech Stack
 
