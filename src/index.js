@@ -26,11 +26,12 @@ document.body.appendChild(tag);
 
 const players = [];
 const videoData = [
+  { id: "project-inventory", videoId: "U6uphuTJsvA" },
+  { id: "shopshop", videoId: "-Db320Srs0w" },
   { id: "cvgen", videoId: "xHkCBpyH3W8" },
   { id: "battleship", videoId: "Lc8rXUNvyvE" },
   { id: "weather-app", videoId: "gdUczWykRzM" },
   { id: "todo-list", videoId: "vFe7MQMd6aE" },
-  { id: "mstm", videoId: "gcjxURTSHHU" },
 ];
 
 window.onYouTubeIframeAPIReady = () => {
