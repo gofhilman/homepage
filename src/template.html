@@ -25,7 +25,7 @@
       </h1>
       <nav>
         <ul
-          class="flex justify-center items-center gap-x-2 text-sm lg:gap-x-5 lg:text-2xl font-medium"
+          class="flex items-center justify-center gap-x-2 text-sm font-medium lg:gap-x-5 lg:text-2xl"
         >
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -49,10 +49,10 @@
         <p
           class="my-10 border-l-10 border-slate-500 px-10 py-5 text-base/normal lg:mr-30 lg:text-xl/normal"
         >
-          I'm a developer from Indonesia with roots in physics. I graduated as
-          valedictorian from Institut Teknologi Bandung and earned a fully
-          funded master's in Quantum Science and Technology at the University of
-          Barcelona. Now I craft the web, daily.
+          I'm a fullstack web developer and data engineer with a solid
+          foundation in core web technologies and a focus on modern frameworks
+          like React and Node.js. I build responsive, accessible applications
+          with clean architecture and scalable backend logic.
         </p>
         <div
           class="flex flex-col items-center gap-[80px] justify-self-center lg:row-span-full lg:mt-[100px] lg:gap-[100px]"
@@ -76,32 +76,124 @@
           </nav>
         </div>
       </section>
-      <section class="separator pb-20" id="projects">
-        <h2 class="line">Featured Projects</h2>
-        <h3>Web development</h3>
+      <section class="separator flex flex-col pb-20" id="projects">
+        <h2 class="line mb-10">Featured Projects</h2>
         <div>
+          <article>
+            <div class="video-wrapper">
+              <div id="project-inventory"></div>
+            </div>
+            <h4>Hilman's Project Inventory</h4>
+            <p>
+              Hilman's Project Inventory is a web application designed to
+              showcase and manage a collection of projects. It allows users to
+              view project details, filter projects by categories, languages,
+              and tools, and perform CRUD operations on the projects. The
+              application is built with a focus on simplicity, usability, and
+              scalability.
+            </p>
+            <div class="project-tools">
+              <div><i class="devicon-nodejs-plain"></i> Node.js</div>
+              <div><i class="devicon-express-original"></i> Express</div>
+              <div><i class="devicon-postgresql-plain"></i> PostgreSQL</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
+              <div class="center-icon">
+                <img
+                  class="white-icon"
+                  src="./assets/ejs-svgrepo-com.svg"
+                  alt="Icon"
+                />
+                EJS
+              </div>
+            </div>
+            <div>
+              <a
+                href="https://inventory-application-production-d04e.up.railway.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="center-icon">
+                  <img class="big-icon" src="./assets/web-box.svg" alt="Icon" />
+                  View live
+                </div>
+              </a>
+              <a
+                href="https://github.com/gofhilman/inventory-application"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div><i class="devicon-github-original"></i> Source</div>
+              </a>
+            </div>
+          </article>
+          <article>
+            <div class="video-wrapper">
+              <div id="shopshop"></div>
+            </div>
+            <h4>ShopShop</h4>
+            <p>
+              A mock shopping website built as a Single-Page Application (SPA)
+              using React Router. Users can browse products, add them to a cart,
+              and simulate a shopping experience. The app features a responsive
+              design and a user-friendly interface.
+            </p>
+            <div class="project-tools">
+              <div><i class="devicon-reactrouter-plain"></i> React Router</div>
+              <div><i class="devicon-react-original"></i> React</div>
+              <div>
+                <i class="devicon-tailwindcss-original"></i> Tailwind CSS
+              </div>
+              <div><i class="devicon-vitejs-plain"></i> Vite</div>
+              <div><i class="devicon-vitest-plain"></i> Vitest</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
+              <div class="center-icon">
+                <img
+                  class="white-icon"
+                  src="./assets/shadcn-ui-seeklogo.svg"
+                  alt="Icon"
+                />
+                shadcn/ui
+              </div>
+            </div>
+            <div>
+              <a
+                href="https://shopping-cart-b3g.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="center-icon">
+                  <img class="big-icon" src="./assets/web-box.svg" alt="Icon" />
+                  View live
+                </div>
+              </a>
+              <a
+                href="https://github.com/gofhilman/shopping-cart"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div><i class="devicon-github-original"></i> Source</div>
+              </a>
+            </div>
+          </article>
           <article>
             <div class="video-wrapper">
               <div id="cvgen"></div>
             </div>
             <h4>CVGen</h4>
             <p>
-              CVGen lets you convert your form input into a downloadable CV or
-              resume letter in real time. As you type, the content is instantly
-              reflected in the letter preview. The app offers three beautiful
-              theme colors for both the interface and the generated CV. Its
-              minimalistic design adapts responsively to any device, providing a
-              seamless experience.
+              This is a React-based CV application that allows users to create
+              and preview their CVs dynamically. Users can input their personal,
+              educational, and professional details, and the application
+              provides a live preview of the CV. The application also supports
+              theme customization.
             </p>
             <div class="project-tools">
-              <div><i class="devicon-html5-plain"></i> HTML</div>
-              <div><i class="devicon-css3-plain"></i> CSS</div>
-              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
               <div><i class="devicon-react-original"></i> React</div>
               <div>
                 <i class="devicon-tailwindcss-original"></i> Tailwind CSS
               </div>
               <div><i class="devicon-vitejs-plain"></i> Vite</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
             </div>
             <div>
               <a
@@ -129,20 +221,16 @@
             </div>
             <h4>Battleship Game</h4>
             <p>
-              A classic guessing game you can play with a friend or against a
-              computer, on any device. The AI opponent is powered by a smart
-              algorithm using Breadth-First Search, making it a real challenge
-              to outsmart. You can position your ships manually to mislead your
-              opponent, or hit the "Randomize" button if you're feeling lazy.
-              It's the closest experience to playing a physical Battleship game,
-              now in digital form!
+              The Battleship Game is a classic strategy game implemented as a
+              web application. Players can compete against a computer or another
+              human player by strategically placing their ships on a grid and
+              taking turns to attack the opponent's grid. The game ends when all
+              ships of one player are sunk.
             </p>
             <div class="project-tools">
-              <div><i class="devicon-html5-plain"></i> HTML</div>
-              <div><i class="devicon-css3-plain"></i> CSS</div>
-              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
               <div><i class="devicon-jest-plain"></i> Jest</div>
               <div><i class="devicon-webpack-plain"></i> Webpack</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
             </div>
             <div>
               <a
@@ -170,19 +258,14 @@
             </div>
             <h4>WeatherApp</h4>
             <p>
-              A visually soothing weather app featuring a frosted glass UI and
-              animated backgrounds that reflect real-time weather conditions.
-              Beyond basic forecasts, it displays the current local time for
-              every city you search. Each location is automatically pinned and
-              saved using localStorage, so your entire search history stays with
-              you, even after closing the app. Best of all, it's fully
-              responsive and works beautifully on any device.
+              WeatherApp allows users to search for weather information, pin
+              locations, and view detailed weather forecasts. It features
+              dynamic backgrounds, unit toggling, and real-time updates for an
+              interactive user experience.
             </p>
             <div class="project-tools">
-              <div><i class="devicon-html5-plain"></i> HTML</div>
-              <div><i class="devicon-css3-plain"></i> CSS</div>
-              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
               <div><i class="devicon-webpack-plain"></i> Webpack</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
             </div>
             <div>
               <a
@@ -210,20 +293,16 @@
             </div>
             <h4>To Do List</h4>
             <p>
-              A minimalist, dark-themed to-do app that's intuitive to use, just
-              a few clicks to manage your tasks without compromising on powerful
-              features. In addition to the basics, it includes a "My Day"
-              section for tasks due today, an "Important" section for your
-              high-priority items, and a "Planned" section that organizes tasks
-              by upcoming deadlines. All your data is automatically saved using
-              localStorage, so everything stays intact even after closing the
-              app.
+              The To Do List application is a task management tool designed to
+              help users organize their daily activities, prioritize tasks, and
+              keep track of deadlines. It allows users to create projects, add
+              tasks, set priorities, and manage task completion efficiently. The
+              application is built with a focus on simplicity and usability,
+              making it an ideal choice for personal productivity.
             </p>
             <div class="project-tools">
-              <div><i class="devicon-html5-plain"></i> HTML</div>
-              <div><i class="devicon-css3-plain"></i> CSS</div>
-              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
               <div><i class="devicon-webpack-plain"></i> Webpack</div>
+              <div><i class="devicon-javascript-plain"></i> JavaScript</div>
             </div>
             <div>
               <a
@@ -246,90 +325,25 @@
             </div>
           </article>
         </div>
-        <h3>Simulations and data analysis</h3>
-        <div>
-          <article>
-            <div class="video-wrapper">
-              <div id="mstm"></div>
-            </div>
-            <h4>Multiple Sphere T-Matrix</h4>
-            <p>
-              A computational study exploring how different particle
-              configurations affect optical scattering characteristics. This
-              project uses Multiple Sphere T-Matrix (MSTM) method to simulate
-              light interaction with spherical aggregates, enabling precise
-              analysis of extinction spectra and scattering behavior. The
-              simulations provide insight into how structural geometry
-              influences optical response, with potential applications in
-              nanophotonics and material science.
-            </p>
-            <div class="project-tools">
-              <div><i class="devicon-fortran-original"></i> Fortran</div>
-              <div class="center-icon">
-                <img
-                  class="white-icon"
-                  src="./assets/wolfram-language-seeklogo.svg"
-                  alt="Icon"
-                />
-                Wolfram Language
-              </div>
-              <div class="center-icon">
-                <img
-                  class="white-icon"
-                  src="./assets/icons8-wolfram-mathematica-100.png"
-                  alt="Icon"
-                />
-                Mathematica
-              </div>
-            </div>
-            <div>
-              <div class="invisible"></div>
-              <a
-                href="https://github.com/gofhilman/mstm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div><i class="devicon-github-original"></i> Source</div>
-              </a>
-            </div>
-          </article>
-          <article>
-            <img
-              class="w-[560px]"
-              src="./assets/fmr.png?as=webp"
-              alt="FMR data"
-            />
-            <h4>Ferromagnetic Resonance Analysis</h4>
-            <p>
-              A MATLAB-based program designed to analyze raw ferromagnetic
-              resonance (FMR) measurement data with precision and flexibility.
-              The tool streamlines the extraction of key magnetic parameters by
-              processing spectral data, applying curve-fitting techniques, and
-              managing temperarature and angle dependent inputs.
-            </p>
-            <div class="project-tools">
-              <div><i class="devicon-matlab-plain"></i> MATLAB</div>
-            </div>
-            <div>
-              <div class="invisible"></div>
-              <a
-                href="https://github.com/gofhilman/fmr-analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div><i class="devicon-github-original"></i> Source</div>
-              </a>
-            </div>
-          </article>
-        </div>
+        <a
+          class="contact-button mt-15 block self-center bg-slate-500 text-xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 lg:text-3xl"
+          href="https://inventory-application-production-d04e.up.railway.app/?page=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          >See all projects</a
+        >
       </section>
       <section class="separator pb-20" id="skills">
         <h2>Current Skills</h2>
         <p
-          class="mx-10 mt-6 border-l-4 border-slate-500 py-1 pl-5 text-base lg:text-xl"
+          class="mx-30 mt-6 border-l-4 border-slate-500 py-1 pl-5 text-base lg:text-xl"
         >
-          Here are the programming languages and tools I typically work with—and
-          the list just keeps growing! :)
+          I build responsive and accessible web apps with clean architecture and
+          dynamic interfaces, using modern frameworks and core technologies. My
+          workflow includes Git, testing, debugging, and scalable backend
+          development with relational databases, authentication, MVC patterns,
+          ORM tools, and APIs. I focus on performance, maintainability, and
+          thoughtful design across devices and users.
         </p>
         <h3>Programming languages</h3>
         <div>
@@ -341,15 +355,15 @@
           </figure>
           <figure>
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
             />
-            <figcaption>HTML</figcaption>
+            <figcaption>TypeScript</figcaption>
           </figure>
           <figure>
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
             />
-            <figcaption>CSS</figcaption>
+            <figcaption>SQL</figcaption>
           </figure>
           <figure>
             <img
@@ -370,8 +384,8 @@
             <figcaption>MATLAB</figcaption>
           </figure>
           <figure>
-            <img src="./assets/wolfram-language-seeklogo-color.svg" />
-            <figcaption>Wolfram Language</figcaption>
+            <img src="./assets/icons8-wolfram-mathematica-color-100.png" />
+            <figcaption>Mathematica</figcaption>
           </figure>
           <figure>
             <img
@@ -384,6 +398,18 @@
         <div>
           <figure>
             <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+            />
+            <figcaption>Node.js</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            />
+            <figcaption>Express</figcaption>
+          </figure>
+          <figure>
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
             />
             <figcaption>PostgreSQL</figcaption>
@@ -393,6 +419,18 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
             />
             <figcaption>React</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original.svg"
+            />
+            <figcaption>React Router</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+            />
+            <figcaption>Next.js</figcaption>
           </figure>
           <figure>
             <img
@@ -412,18 +450,12 @@
             />
             <figcaption>Git</figcaption>
           </figure>
-          <figure>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-            />
-            <figcaption>Node.js</figcaption>
-          </figure>
-          <figure>
+          <!-- <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
             />
             <figcaption>npm</figcaption>
-          </figure>
+          </figure> -->
           <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
@@ -439,6 +471,10 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postcss/postcss-original.svg"
             />
             <figcaption>PostCSS</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/ejs-svgrepo-com.svg" />
+            <figcaption>EJS</figcaption>
           </figure>
           <figure>
             <img
@@ -459,6 +495,52 @@
             <figcaption>Babel</figcaption>
           </figure>
           <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+            />
+            <figcaption>Pandas</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
+            />
+            <figcaption>Matplotlib</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
+            />
+            <figcaption>scikit-learn</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+            />
+            <figcaption>NumPy</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/logo-mark-lightbg.svg" />
+            <figcaption>Seaborn</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
+            />
+            <figcaption>TensorFlow</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg"
+            />
+            <figcaption>Keras</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+            />
+            <figcaption>OpenCV</figcaption>
+          </figure>
+          <!-- <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
             />
@@ -481,7 +563,7 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg"
             />
             <figcaption>Cloudflare</figcaption>
-          </figure>
+          </figure> -->
           <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg"
@@ -493,20 +575,10 @@
             <figcaption>Prettier</figcaption>
           </figure>
           <figure>
-            <img src="./assets/icons8-wolfram-mathematica-color-100.png" />
-            <figcaption>Mathematica</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg"
-            />
-            <figcaption>LaTeX</figcaption>
-          </figure>
-          <figure>
             <img src="./assets/testing-library-seeklogo.svg" />
             <figcaption>Testing Library</figcaption>
           </figure>
-          <figure>
+          <!-- <figure>
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lodash/lodash-original.svg"
             />
@@ -523,7 +595,7 @@
           <figure>
             <img src="./assets/imagemin-seeklogo.svg" />
             <figcaption>Imagemin</figcaption>
-          </figure>
+          </figure> -->
           <figure>
             <img src="./assets/v2-7a8ee7eb8cc95edc8b304c2bb1fab75c_ipico.png" />
             <figcaption>date-fns</figcaption>
@@ -546,7 +618,7 @@
             alt=""
           />
         </h2>
-        <p class="my-3 text-xl lg:ml-15">A web developer from Indonesia</p>
+        <p class="my-3 text-xl lg:ml-15">A fullstack web developer from Indonesia</p>
         <article
           class="mt-[20px] justify-self-stretch lg:row-span-full lg:mt-[60px]"
         >
