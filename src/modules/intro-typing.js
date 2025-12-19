@@ -17,7 +17,7 @@ class IntroTyping {
       this.waitTime !== this.waitDuration
     ) {
       this.waitTime++;
-      if(this.waitTime % 5 === 0) {
+      if (this.waitTime % 5 === 0) {
         this.cursor = this.cursor ? "" : "|";
       }
     } else {
@@ -45,10 +45,10 @@ class IntroTyping {
 
 const introTyping = new IntroTyping(
   [
-    "Web Developer.",
+    "Software Engineer.",
     "Fullstack Developer.",
+    "Web Developer.",
     "Problem Solver.",
-    "Scientific Programmer.",
   ],
   40,
 );
