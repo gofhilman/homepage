@@ -1,4 +1,4 @@
-class IntroTyping {
+export default class IntroTyping {
   constructor(list, waitDuration) {
     this.list = list;
     this.waitDuration = waitDuration;
@@ -42,15 +42,3 @@ class IntroTyping {
     }
   }
 }
-
-const introTyping = new IntroTyping(
-  [
-    "Software Engineer.",
-    "Fullstack Developer.",
-    "Web Developer.",
-    "Problem Solver.",
-  ],
-  40,
-);
-
-export default introTyping;
