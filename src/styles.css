@@ -31,7 +31,7 @@
     @apply flex flex-col items-center;
   }
   figure > img {
-    @apply w-[50px] lg:w-[100px];
+    @apply h-[30px] lg:h-[60px];
   }
 
   figcaption {
@@ -147,7 +147,7 @@
   }
 
   #skills > div {
-    @apply mx-5 grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center gap-y-5 lg:mx-20 lg:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] lg:gap-y-10;
+    @apply mx-5 grid grid-cols-[repeat(auto-fill,minmax(50px,1fr))] justify-items-center gap-x-2 gap-y-3 lg:mx-20 lg:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] lg:gap-x-4 lg:gap-y-5;
   }
 
   .embla {
