@@ -1,4 +1,4 @@
-class HeaderTyping {
+export default class HeaderTyping {
   constructor(header) {
     this.header = header;
     this.complete = false;
@@ -22,7 +22,3 @@ class HeaderTyping {
     }
   }
 }
-
-const headerTyping = new HeaderTyping("Hilman Fikry");
-
-export default headerTyping;
