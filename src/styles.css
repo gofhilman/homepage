@@ -18,28 +18,28 @@
     @apply text-slate-950;
   }
   h2 {
-    @apply pt-20 lg:text-5xl/snug text-2xl/snug font-semibold;
+    @apply pt-20 text-2xl/snug font-semibold lg:text-5xl/snug;
   }
   h3 {
-    @apply lg:text-3xl text-xl font-medium;
+    @apply text-xl font-medium lg:text-3xl;
   }
   h4 {
-    @apply mx-5 mt-6 justify-self-stretch border-l-3 py-1 pl-5 lg:text-2xl text-lg text-white;
+    @apply mx-5 mt-6 justify-self-stretch border-l-3 py-1 pl-5 text-lg text-white lg:text-2xl;
   }
 
   figure {
     @apply flex flex-col items-center;
   }
   figure > img {
-    @apply lg:w-[100px] w-[50px];
+    @apply w-[50px] lg:w-[100px];
   }
 
   figcaption {
-    @apply text-center text-slate-500 text-xs lg:text-base;
+    @apply text-center text-xs text-slate-500 lg:text-base;
   }
 
   address {
-    @apply mx-3 lg:mx-0 my-5 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-y-5 text-lg not-italic;
+    @apply mx-3 my-5 grid grid-cols-[repeat(auto-fill,minmax(150px,1fr))] gap-y-5 text-lg not-italic lg:mx-0;
   }
 
   address a {
@@ -52,10 +52,10 @@
 
 @layer components {
   .progress-bar::before {
-    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''];
+    @apply absolute inset-x-[15px] bottom-0 h-min border-b-[0.5px] border-slate-500/50 content-[''] lg:inset-x-[50px];
   }
   .progress-bar::after {
-    @apply absolute lg:inset-x-[50px] inset-x-[15px] bottom-0 h-[2px] bg-slate-950 content-[''];
+    @apply absolute inset-x-[15px] bottom-0 h-[2px] bg-slate-950 content-[''] lg:inset-x-[50px];
     transform-origin: center left;
     animation: progress linear;
     animation-timeline: scroll(root block);
@@ -90,13 +90,13 @@
   }
 
   #projects article {
-    @apply grid lg:w-[600px] w-[300px] items-start rounded-lg bg-slate-500 text-white;
+    @apply grid w-[300px] items-start rounded-lg bg-slate-500 text-white lg:w-[600px];
     box-shadow:
       inset 0 2px 5px rgba(255, 255, 255, 0.5),
       inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
   #projects > div {
-    @apply lg:mx-3 mx-1 grid justify-items-center gap-y-10;
+    @apply mx-1 grid justify-items-center gap-y-10 lg:mx-3;
   }
   #projects article > img {
     @apply rounded-t-lg;
@@ -107,10 +107,10 @@
   }
 
   #projects article > div:last-child {
-    @apply lg:mx-4 mx-2 flex border-t-2 py-5 lg:text-xl text-lg;
+    @apply mx-2 flex border-t-2 py-5 text-lg lg:mx-4 lg:text-xl;
   }
   #projects article > div:last-child > * {
-    @apply lg:mx-10 mx-2 flex-1 bg-white/25 text-center lg:py-1.5 py-1;
+    @apply mx-2 flex-1 bg-white/25 py-1 text-center lg:mx-10 lg:py-1.5;
     backdrop-filter: blur(10px);
     border-radius: 5px;
     box-shadow:
@@ -125,7 +125,7 @@
 
   .big-icon {
     filter: brightness(0) invert(1);
-    @apply inline-block lg:w-[30px] w-[25px];
+    @apply inline-block w-[25px] lg:w-[30px];
   }
 
   #projects > h2,
@@ -135,11 +135,11 @@
 
   #projects h3,
   #skills h3 {
-    @apply m-5 w-[200px] rounded-tl-lg border-t-[6px] border-l-[6px] border-slate-500 py-3 lg:pl-5 pl-2 whitespace-nowrap;
+    @apply m-5 w-[200px] rounded-tl-lg border-t-[6px] border-l-[6px] border-slate-500 py-3 pl-2 whitespace-nowrap lg:pl-5;
   }
 
   .project-tools {
-    @apply flex flex-wrap lg:gap-x-5 lg:gap-y-1 gap-x-3 gap-y-1 px-5 lg:pb-3 pb-2 lg:text-lg text-base;
+    @apply flex flex-wrap gap-x-3 gap-y-1 px-5 pb-2 text-base lg:gap-x-5 lg:gap-y-1 lg:pb-3 lg:text-lg;
   }
 
   .center-icon {
@@ -147,7 +147,34 @@
   }
 
   #skills > div {
-    @apply lg:mx-20 mx-5 grid lg:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center lg:gap-y-10 gap-y-5;
+    @apply mx-5 grid grid-cols-[repeat(auto-fill,minmax(80px,1fr))] justify-items-center gap-y-5 lg:mx-20 lg:grid-cols-[repeat(auto-fill,minmax(150px,1fr))] lg:gap-y-10;
+  }
+
+  .embla {
+    position: relative;
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+  }
+
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+  }
+
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+
+  .embla__buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

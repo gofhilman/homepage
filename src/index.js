@@ -3,12 +3,7 @@ import IntroTyping from "./modules/intro-typing";
 import "./styles.css";
 
 const introTyping = new IntroTyping(
-  [
-    "Software Engineer.",
-    "Web Developer.",
-    "Data Engineer.",
-    "Data Analyst.",
-  ],
+  ["Software Engineer.", "Web Developer.", "Data Engineer.", "Data Analyst."],
   40,
 );
 
@@ -30,3 +25,18 @@ setInterval(() => {
   headTyping.textContent = headerTyping.typedString;
   headCursor.textContent = headerTyping.cursor;
 }, 120);
+
+import EmblaCarousel from 'embla-carousel'
+import Autoplay from 'embla-carousel-autoplay'
+
+const wrapperNode = document.querySelector('.embla')
+const viewportNode = wrapperNode.querySelector('.embla__viewport')
+const prevButtonNode = wrapperNode.querySelector('.embla__prev')
+const nextButtonNode = wrapperNode.querySelector('.embla__next')
+
+const emblaApi = EmblaCarousel(viewportNode, { loop: true }, [Autoplay()])
+
+prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
+nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+
+emblaApi.plugins().autoplay?.play()

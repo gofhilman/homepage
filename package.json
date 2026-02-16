@@ -35,6 +35,8 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
     "modern-normalize": "^3.0.1"
   },
   "scripts": {
