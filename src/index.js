@@ -29,14 +29,25 @@ setInterval(() => {
 import EmblaCarousel from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 
-const wrapperNode = document.querySelector('.embla')
-const viewportNode = wrapperNode.querySelector('.embla__viewport')
-const prevButtonNode = wrapperNode.querySelector('.embla__prev')
-const nextButtonNode = wrapperNode.querySelector('.embla__next')
+const wrapperNodes = document.querySelectorAll('.embla')
 
-const emblaApi = EmblaCarousel(viewportNode, { loop: true }, [Autoplay()])
+wrapperNodes.forEach((wrapperNode) => {
+  const viewportNode = wrapperNode.querySelector('.embla__viewport')
+  const prevButtonNode = wrapperNode.querySelector('.embla__prev')
+  const nextButtonNode = wrapperNode.querySelector('.embla__next')
 
-prevButtonNode.addEventListener('click', () => emblaApi.scrollPrev(), false)
-nextButtonNode.addEventListener('click', () => emblaApi.scrollNext(), false)
+  const emblaApi = EmblaCarousel(viewportNode, { loop: true }, [Autoplay()])
+  const autoplay = emblaApi.plugins().autoplay
 
-emblaApi.plugins().autoplay?.play()
+  prevButtonNode.addEventListener('click', () => {
+    emblaApi.scrollPrev()
+    autoplay?.stop()
+  }, false)
+
+  nextButtonNode.addEventListener('click', () => {
+    emblaApi.scrollNext()
+    autoplay?.stop()
+  }, false)
+
+  autoplay?.play()
+})

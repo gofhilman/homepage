@@ -98,7 +98,7 @@
   #projects > div {
     @apply mx-1 grid justify-items-center gap-y-10 lg:mx-3;
   }
-  #projects article > img {
+  #projects .embla__viewport {
     @apply rounded-t-lg;
   }
 
