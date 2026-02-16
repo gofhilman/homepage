@@ -27,10 +27,6 @@
     @apply mx-5 mt-6 justify-self-stretch border-l-3 py-1 pl-5 lg:text-2xl text-lg text-white;
   }
 
-  iframe {
-    @apply rounded-t-lg;
-  }
-
   figure {
     @apply flex flex-col items-center;
   }
@@ -94,13 +90,13 @@
   }
 
   #projects article {
-    @apply grid lg:w-[505px] w-[300px] items-start rounded-lg bg-slate-500 text-white;
+    @apply grid lg:w-[600px] w-[300px] items-start rounded-lg bg-slate-500 text-white;
     box-shadow:
       inset 0 2px 5px rgba(255, 255, 255, 0.5),
       inset 0 -2px 5px rgba(0, 0, 0, 0.5);
   }
   #projects > div {
-    @apply lg:mx-3 mx-1 grid lg:grid-cols-[repeat(auto-fit,minmax(550px,1fr))] grid-cols-[repeat(auto-fit,minmax(320px,1fr))] justify-items-center gap-y-10;
+    @apply lg:mx-3 mx-1 grid justify-items-center gap-y-10;
   }
   #projects article > img {
     @apply rounded-t-lg;
