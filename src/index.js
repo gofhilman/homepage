@@ -1,53 +1,10 @@
-import HeaderTyping from "./modules/header-typing";
-import IntroTyping from "./modules/intro-typing";
 import "./styles.css";
 
-const introTyping = new IntroTyping(
-  ["Software Engineer.", "Web Developer.", "Data Engineer.", "Data Analyst."],
-  40,
-);
-
-const headerTyping = new HeaderTyping("Hilman Fikry");
-
-const typing = document.querySelector("#typing");
-const cursor = document.querySelector("#cursor");
-const headTyping = document.querySelector("#head-typing");
-const headCursor = document.querySelector("#head-cursor");
-
-setInterval(() => {
-  introTyping.type();
-  typing.textContent = introTyping.typedString;
-  cursor.textContent = introTyping.cursor;
-}, 100);
-
-setInterval(() => {
-  headerTyping.type();
-  headTyping.textContent = headerTyping.typedString;
-  headCursor.textContent = headerTyping.cursor;
-}, 120);
-
-import EmblaCarousel from 'embla-carousel'
-import Autoplay from 'embla-carousel-autoplay'
-
-const wrapperNodes = document.querySelectorAll('.embla')
-
-wrapperNodes.forEach((wrapperNode) => {
-  const viewportNode = wrapperNode.querySelector('.embla__viewport')
-  const prevButtonNode = wrapperNode.querySelector('.embla__prev')
-  const nextButtonNode = wrapperNode.querySelector('.embla__next')
-
-  const emblaApi = EmblaCarousel(viewportNode, { loop: true }, [Autoplay()])
-  const autoplay = emblaApi.plugins().autoplay
-
-  prevButtonNode.addEventListener('click', () => {
-    emblaApi.scrollPrev()
-    autoplay?.stop()
-  }, false)
-
-  nextButtonNode.addEventListener('click', () => {
-    emblaApi.scrollNext()
-    autoplay?.stop()
-  }, false)
-
-  autoplay?.play()
-})
+// Import Web Components
+import "./components/site-header";
+import "./components/hero-section";
+import "./components/project-item";
+import "./components/skill-item";
+import "./components/skills-section";
+import "./components/contact-section";
+import "./components/site-footer";
