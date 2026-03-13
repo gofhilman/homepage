@@ -1,7 +1,10 @@
 import HeaderTyping from "../modules/header-typing";
+import siteData from "../data/site-data";
 
 class SiteHeader extends HTMLElement {
   connectedCallback() {
+    const { title, navLinks } = siteData.header;
+
     this.innerHTML = `
       <header
         class="progress-bar fixed inset-x-0 top-0 z-1 flex items-center justify-between bg-white/20 px-[10px] py-[20px] backdrop-blur-sm lg:px-[50px] lg:py-[18px]"
@@ -18,16 +21,19 @@ class SiteHeader extends HTMLElement {
           <ul
             class="flex items-center justify-center gap-x-2 text-sm font-medium lg:gap-x-5 lg:text-2xl"
           >
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            ${navLinks
+              .map(
+                (link) => `
+              <li><a href="${link.url}">${link.label}</a></li>
+            `,
+              )
+              .join("")}
           </ul>
         </nav>
       </header>
     `;
 
-    const headerTyping = new HeaderTyping("Hilman Fikry");
+    const headerTyping = new HeaderTyping(title);
     const headTypingEl = this.querySelector("#head-typing");
     const headCursorEl = this.querySelector("#head-cursor");
 

@@ -4,6 +4,7 @@ import "./styles.css";
 import "./components/site-header";
 import "./components/hero-section";
 import "./components/project-item";
+import "./components/projects-section";
 import "./components/skill-item";
 import "./components/skills-section";
 import "./components/contact-section";
