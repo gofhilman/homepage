@@ -2,7 +2,37 @@ import shadcnIcon from "../assets/shadcn-ui-seeklogo.svg";
 
 const projects = [
   {
-    id: "photo-tagging",
+    title: "Private, Group, and Global Chat App",
+    description: [
+      "Built a full-stack messaging app with global, private, and group conversations in a responsive mobile-first interface",
+      "Implemented JWT authentication, guest access, user profiles, avatar uploads, and image messaging",
+      "Added core chat UX features like read tracking, online/offline presence, searchable user discovery, and group creation/editing",
+      "Designed the app for reliability with retry-based API/database handling and polling-driven near real-time updates",
+    ],
+    images: [
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773848225/Slide1_qcuc55.jpg",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773849570/Slide4_c20kyd.jpg",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773848225/Slide2_zu38mw.jpg",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773849567/Slide3_kwfg9m.jpg",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773848257/Screenshot_2026-03-18_220853_wiujic.png",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1773849544/Screenshot_2026-03-18_225825_waebqc.png",
+    ],
+    tools: [
+      { name: "Node.js", icon: "devicon-nodejs-plain" },
+      { name: "Express", icon: "devicon-express-original" },
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
+      { name: "Prisma ORM", icon: "devicon-prisma-original" },
+      { name: "Passport.js", icon: "devicon-passport-plain" },
+      { name: "React Router", icon: "devicon-reactrouter-plain" },
+      { name: "React", icon: "devicon-react-original" },
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original" },
+      { name: "Vite", icon: "devicon-vitejs-plain" },
+      { name: "shadcn/ui", svg: shadcnIcon },
+    ],
+    liveLink: "https://where-s-scorpion.pages.dev/",
+    sourceLink: "https://github.com/gofhilman/where-s-scorpion",
+  },
+  {
     title: "Photo Tagging App",
     description: `A hidden-object web game inspired by photo tagging mechanics,
 built around Gus Morais' Mortal Kombat artwork. It combines simple
@@ -29,7 +59,6 @@ but competitive experience.`,
     sourceLink: "https://github.com/gofhilman/where-s-scorpion",
   },
   {
-    id: "shopping-cart",
     title: "Shopping Cart",
     description: `A mock shopping website built as a Single-Page Application (SPA)
 using React Router. Users can browse products, add them to a cart,
@@ -52,7 +81,6 @@ design and a user-friendly interface.`,
     sourceLink: "https://github.com/gofhilman/shopping-cart",
   },
   {
-    id: "battleship",
     title: "Battleship Game",
     description: `The Battleship Game is a classic strategy game implemented as a
 web application. Players can compete against a computer or another

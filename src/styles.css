@@ -102,8 +102,8 @@
     @apply rounded-t-lg;
   }
 
-  #projects article > p {
-    @apply px-5 py-2 text-sm lg:text-base;
+  #projects article > ul {
+    @apply list-disc py-2 pr-5 pl-10 text-sm lg:text-base;
   }
 
   #projects article > div:last-child {
@@ -166,15 +166,21 @@
   .embla__slide {
     flex: 0 0 100%;
     min-width: 0;
+    object-fit: cover;
   }
 
-  .embla__buttons {
+  .embla__prev {
     position: absolute;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  }
+
+  .embla__next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
   }
 }
 

@@ -44,7 +44,9 @@ class ProjectItem extends HTMLElement {
           </div>
         </div>
         <h4>${title}</h4>
-        <p>${description}</p>
+        <ul>${description
+          .map((item) => `<li>${item.trim()}</li>`)
+          .join("")}</ul>
         <div class="project-tools">
           ${tools
             .map(
