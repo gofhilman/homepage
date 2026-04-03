@@ -3,6 +3,7 @@ import kestraIcon from "../assets/kestra-plain.svg";
 import gcsIcon from "../assets/Cloud_Storage-512-color.svg";
 import bigqueryIcon from "../assets/BigQuery-512-color.svg";
 import dbtIcon from "../assets/dbt-bit-standalone.png";
+import cloudinaryIcon from "../assets/cloudinary_cloud_glyph_regular.svg";
 
 const projects = [
   {
@@ -30,8 +31,8 @@ const projects = [
       { name: "BigQuery", svg: bigqueryIcon },
       { name: "dbt", svg: dbtIcon },
     ],
-    liveLink: "https://where-s-scorpion.pages.dev/",
-    sourceLink: "https://github.com/gofhilman/where-s-scorpion",
+    liveLink: "https://gofhilman.github.io/ai-economic-index/",
+    sourceLink: "https://github.com/gofhilman/ai-economic-index",
   },
   {
     title: "Private, Group, and Global Chat App",
@@ -54,26 +55,30 @@ const projects = [
       { name: "Express", icon: "devicon-express-original" },
       { name: "PostgreSQL", icon: "devicon-postgresql-plain" },
       { name: "Prisma ORM", icon: "devicon-prisma-original" },
+      { name: "Cloudinary", svg: cloudinaryIcon },
       { name: "Passport.js", icon: "devicon-passport-plain" },
       { name: "React Router", icon: "devicon-reactrouter-plain" },
       { name: "React", icon: "devicon-react-original" },
       { name: "Tailwind CSS", icon: "devicon-tailwindcss-original" },
       { name: "Vite", icon: "devicon-vitejs-plain" },
       { name: "shadcn/ui", svg: shadcnIcon },
+      { name: "Motion", icon: "devicon-framermotion-original" },
     ],
-    liveLink: "https://where-s-scorpion.pages.dev/",
-    sourceLink: "https://github.com/gofhilman/where-s-scorpion",
+    liveLink: "https://secrechat.pages.dev/",
+    sourceLink: "https://github.com/gofhilman/messaging-app",
   },
   {
-    title: "Photo Tagging App",
-    description: `A hidden-object web game inspired by photo tagging mechanics,
-built around Gus Morais' Mortal Kombat artwork. It combines simple
-click-to-tag play with backend validation, session persistence via
-JWT, and a leaderboard for fastest runs, offering a lightweight
-but competitive experience.`,
+    title: "Where's Scorpion?",
+    description: [
+      "Engineered a React 19/Node.js web game with backend-authoritative hit validation to prevent client-side tampering.",
+      "Utilized relative percentage coordinates (0-100) for cross-device hit-box accuracy and responsive progress marking.",
+      "Developed stateless session persistence via JWT, allowing players to resume active runs without account creation.",
+      "Architected a PostgreSQL/Prisma backend for real-time game tracking, random target generation, and global leaderboards.",
+    ],
     images: [
       "https://res.cloudinary.com/dwyzndpyq/image/upload/v1772286862/Screenshot_2026-02-28_205358_f4vftg.png",
       "https://res.cloudinary.com/dwyzndpyq/image/upload/v1772286886/Screenshot_2026-02-28_205240_zxc6qk.png",
+      "https://res.cloudinary.com/dwyzndpyq/image/upload/q_auto/f_auto/v1775215078/where_s_scorpion_w7q0sf.jpg",
     ],
     tools: [
       { name: "Node.js", icon: "devicon-nodejs-plain" },
@@ -89,48 +94,6 @@ but competitive experience.`,
     ],
     liveLink: "https://where-s-scorpion.pages.dev/",
     sourceLink: "https://github.com/gofhilman/where-s-scorpion",
-  },
-  {
-    title: "Shopping Cart",
-    description: `A mock shopping website built as a Single-Page Application (SPA)
-using React Router. Users can browse products, add them to a cart,
-and simulate a shopping experience. The app features a responsive
-design and a user-friendly interface.`,
-    images: [
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1757752826/22_mx9z69.png",
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1771234562/Screenshot_2026-02-16_163534_jpe86x.png",
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1771234561/Screenshot_2026-02-16_163147_wgekiw.png",
-    ],
-    tools: [
-      { name: "React Router", icon: "devicon-reactrouter-plain" },
-      { name: "React", icon: "devicon-react-original" },
-      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original" },
-      { name: "Vite", icon: "devicon-vitejs-plain" },
-      { name: "Vitest", icon: "devicon-vitest-plain" },
-      { name: "shadcn/ui", svg: shadcnIcon },
-    ],
-    liveLink: "https://shopping-cart-b3g.pages.dev/",
-    sourceLink: "https://github.com/gofhilman/shopping-cart",
-  },
-  {
-    title: "Battleship Game",
-    description: `The Battleship Game is a classic strategy game implemented as a
-web application. Players can compete against a computer or another
-human player by strategically placing their ships on a grid and
-taking turns to attack the opponent's grid. The game ends when all
-ships of one player are sunk.`,
-    images: [
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1757752823/18_n0eokh.png",
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1771236867/Screenshot_2026-02-16_171147_kafyvo.png",
-      "https://res.cloudinary.com/dwyzndpyq/image/upload/v1771236866/Screenshot_2026-02-16_171401_gpcipq.png",
-    ],
-    tools: [
-      { name: "Jest", icon: "devicon-jest-plain" },
-      { name: "Webpack", icon: "devicon-webpack-plain" },
-      { name: "JavaScript", icon: "devicon-javascript-plain" },
-    ],
-    liveLink: "https://gofhilman.github.io/battleship/",
-    sourceLink: "https://github.com/gofhilman/battleship",
   },
 ];
 
