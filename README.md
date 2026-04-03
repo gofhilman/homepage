@@ -3,7 +3,7 @@
 Personal portfolio site for Hilman Fikry, built with vanilla JavaScript Web
 Components, Tailwind CSS, and Webpack. Deployed on GitHub Pages.
 
-Live: <https://gofhilman.github.io/homepage/>
+Live: <https://gofhilman.my.id/>
 
 ## Features
 

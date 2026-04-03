@@ -12,7 +12,7 @@ class SiteHeader extends HTMLElement {
         <h1
           class="mr-3 text-base font-semibold whitespace-nowrap lg:mr-10 lg:text-3xl"
         >
-          <a href="/homepage">
+          <a href="/">
             <pre class="font-sans">&lt; <span id="head-typing"></span
               ><span id="head-cursor"></span> /&gt;</pre>
           </a>
