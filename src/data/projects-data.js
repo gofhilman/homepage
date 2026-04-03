@@ -73,7 +73,7 @@ const projects = [
       "Engineered a React 19/Node.js web game with backend-authoritative hit validation to prevent client-side tampering.",
       "Utilized relative percentage coordinates (0-100) for cross-device hit-box accuracy and responsive progress marking.",
       "Developed stateless session persistence via JWT, allowing players to resume active runs without account creation.",
-      "Architected a PostgreSQL/Prisma backend for real-time game tracking, random target generation, and global leaderboards.",
+      "Architected a PostgreSQL/Prisma backend for real-time tracking and global leaderboards, supporting 1,000+ unique plays and 500+ completions.",
     ],
     images: [
       "https://res.cloudinary.com/dwyzndpyq/image/upload/v1772286862/Screenshot_2026-02-28_205358_f4vftg.png",
