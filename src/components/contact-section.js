@@ -34,10 +34,7 @@ class ContactSection extends HTMLElement {
               .map(
                 (link) => `
               <article>
-                <a
-                  href="${link.url}"
-                  ${link.external ? 'target="_blank" rel="noopener noreferrer"' : ""}
-                >
+                <a href="${link.url}">
                   <img src="${link.icon}" alt="${link.label} logo" />
                   <p>${link.label}</p>
                 </a>

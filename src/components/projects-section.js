@@ -13,8 +13,6 @@ class ProjectsSection extends HTMLElement {
         <a
           class="contact-button mt-15 block self-center bg-slate-500 text-xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 lg:text-3xl"
           href="https://github.com/gofhilman"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           See other projects
         </a>

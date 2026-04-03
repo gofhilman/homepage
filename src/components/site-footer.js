@@ -12,8 +12,6 @@ class SiteFooter extends HTMLElement {
           ${copyright}
           <a
             href="${githubRepo}"
-            target="_blank"
-            rel="noopener noreferrer"
             class="text-blue-200 underline"
             >${githubLabel}</a
           >

@@ -66,13 +66,13 @@ class ProjectItem extends HTMLElement {
             .join("")}
         </div>
         <div>
-          <a href="${liveLink}" target="_blank" rel="noopener noreferrer">
+          <a href="${liveLink}">
             <div class="center-icon">
               <img class="big-icon" src="${webBox}" alt="Web icon" />
               View live
             </div>
           </a>
-          <a href="${sourceLink}" target="_blank" rel="noopener noreferrer">
+          <a href="${sourceLink}">
             <div><i class="devicon-github-original"></i> Source</div>
           </a>
         </div>

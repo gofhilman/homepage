@@ -81,8 +81,6 @@ class BlogSection extends HTMLElement {
         <a
           class="contact-button mt-15 block self-center bg-slate-500 text-xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 lg:text-3xl"
           href="${blogData.rootUrl}"
-          target="_blank"
-          rel="noopener noreferrer"
         >
           ${blogData.archiveLabel}
         </a>
@@ -157,7 +155,7 @@ class BlogSection extends HTMLElement {
 
     return `
       <article>
-        <a href="${postUrl}" target="_blank" rel="noopener noreferrer">
+        <a href="${postUrl}">
           <h3>${title}</h3>
           ${
             metaParts.length > 0
