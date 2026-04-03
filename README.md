@@ -7,7 +7,7 @@ Live: <https://gofhilman.github.io/homepage/>
 
 ## Features
 
-- Data-driven sections for hero, projects, skills, and contact info
+- Data-driven sections for hero, projects, blog posts, and contact info
 - Typing animations in the header and hero intro
 - Project carousel powered by Embla
 - Responsive layout with smooth scrolling and a scroll progress bar
@@ -57,7 +57,7 @@ Edit the data files to change site content:
 
 - `src/data/hero-data.js`
 - `src/data/projects-data.js`
-- `src/data/skills-data.js`
+- `src/data/blog-data.js`
 - `src/data/contact-data.js`
 - `src/data/site-data.js`
 

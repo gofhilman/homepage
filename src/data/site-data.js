@@ -4,7 +4,7 @@ const siteData = {
     navLinks: [
       { label: "About", url: "#about" },
       { label: "Projects", url: "#projects" },
-      { label: "Skills", url: "#skills" },
+      { label: "Blog", url: "#blog" },
       { label: "Contact", url: "#contact" },
     ],
   },

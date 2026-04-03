@@ -3,7 +3,6 @@ import kestraIcon from "../assets/kestra-plain.svg";
 import gcsIcon from "../assets/Cloud_Storage-512-color.svg";
 import bigqueryIcon from "../assets/BigQuery-512-color.svg";
 import dbtIcon from "../assets/dbt-bit-standalone.png";
-import evidenceIcon from "../assets/idbTm7Pupt_logos.jpeg"
 
 const projects = [
   {
