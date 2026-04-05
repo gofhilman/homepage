@@ -13,7 +13,7 @@ const contactData = {
     },
     {
       label: "Blog",
-      url: "https://stacked-stories.pages.dev/",
+      url: "https://blog.gofhilman.my.id/",
       icon: rssIcon,
       external: true,
     },
