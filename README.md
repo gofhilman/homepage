@@ -1,7 +1,7 @@
 # Homepage
 
 Personal portfolio site for Hilman Fikry, built with vanilla JavaScript Web
-Components, Tailwind CSS, and Webpack. Deployed on GitHub Pages.
+Components, Tailwind CSS, and Webpack.
 
 Live: <https://gofhilman.my.id/>
 
