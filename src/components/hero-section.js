@@ -18,7 +18,7 @@ class HeroSection extends HTMLElement {
 
     this.innerHTML = `
       <section
-        class="grid min-h-[calc(100dvh-72px)] items-start gap-x-[40px] px-[20px] pb-0 lg:min-h-[calc(100dvh-100px)] xl:grid-flow-col xl:grid-cols-[2fr_1fr] xl:grid-rows-2 xl:px-[150px]"
+        class="grid min-h-[calc(100dvh-72px)] items-start gap-x-[40px] px-[20px] pb-20 lg:min-h-[calc(100dvh-100px)] xl:grid-flow-col xl:grid-cols-[2fr_1fr] xl:grid-rows-2 xl:px-[150px]"
         id="about"
       >
         <h2 class="flex flex-col self-center pt-4 lg:pt-12">
