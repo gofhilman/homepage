@@ -9,6 +9,9 @@ applications and robust data pipelines with clean architecture and
 DevOps practices.`,
   profileImage: profileImage,
   profileAlt: "A portrait of Hilman Fikry",
+  resumeCta: "Download resume",
+  resumeLink:
+    "https://1drv.ms/f/c/06767bee76cede9f/IgCTQGUphvBXRZkrkcgM4x_5AedOqTBySaKYCaiMd8t9x4w?e=4PyhrI",
   contactCta: "Contact me",
   contactLink: "#contact",
 };
