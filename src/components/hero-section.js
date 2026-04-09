@@ -18,7 +18,7 @@ class HeroSection extends HTMLElement {
 
     this.innerHTML = `
       <section
-        class="grid min-h-[calc(100dvh-72px)] items-start gap-x-[40px] px-[20px] pb-20 lg:min-h-[calc(100dvh-100px)] xl:grid-flow-col xl:grid-cols-[2fr_1fr] xl:grid-rows-2 xl:px-[150px]"
+        class="grid min-h-[calc(100dvh-72px)] gap-y-5 items-start gap-x-[40px] px-[20px] pb-20 lg:min-h-[calc(100dvh-100px)] xl:grid-flow-col xl:grid-cols-[2fr_1fr] xl:grid-rows-2 xl:px-[150px] xl:gap-y-0"
         id="about"
       >
         <h2 class="flex flex-col self-center pt-4 lg:pt-12">
@@ -45,14 +45,14 @@ class HeroSection extends HTMLElement {
         <div
           class="flex flex-col items-center gap-[56px] justify-self-center lg:gap-[80px] xl:row-span-full xl:mt-[130px] xl:gap-[100px]"
         >
-          <div class="relative">
+          <div class="relative w-full max-w-[220px] sm:max-w-[260px] xl:max-w-[300px]">
             <img
               src="${profileImage}"
               alt="${profileAlt}"
-              class="max-w-[200px] rounded-sm xl:max-w-[300px]"
+              class="block w-full rounded-sm"
             />
             <div
-              class="shadowing absolute top-5 left-5 -z-1 size-full rounded-sm bg-slate-500"
+              class="shadowing absolute top-4 left-4 -z-1 size-full rounded-sm bg-slate-500 xl:top-5 xl:left-5"
             ></div>
           </div>
           <nav>
