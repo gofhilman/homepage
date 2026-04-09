@@ -12,7 +12,7 @@ class SiteFooter extends HTMLElement {
           ${copyright}
           <a
             href="${githubRepo}"
-            class="text-blue-200 underline"
+            class="text-slate-700 underline transition-colors duration-300 hover:text-slate-950"
             >${githubLabel}</a
           >
         </p>
