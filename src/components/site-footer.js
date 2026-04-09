@@ -5,7 +5,7 @@ class SiteFooter extends HTMLElement {
     const { copyright, githubRepo, githubLabel } = siteData.footer;
 
     this.innerHTML = `
-      <footer class="pb-5 text-white md:text-center lg:pb-8">
+      <footer class="pb-5 px-5 text-white md:text-center lg:pb-8">
         <p
           class="footer-pill"
         >
