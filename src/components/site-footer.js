@@ -7,7 +7,7 @@ class SiteFooter extends HTMLElement {
     this.innerHTML = `
       <footer class="pb-5 text-white md:text-center lg:pb-8">
         <p
-          class="contact-button bg-slate-500 py-1.5 text-xs lg:py-3 lg:text-base"
+          class="footer-pill"
         >
           ${copyright}
           <a

@@ -35,7 +35,7 @@ class HeroSection extends HTMLElement {
             ${bio}
           </p>
           <a
-            class="contact-button ml-10 bg-slate-500 text-base font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 lg:text-lg xl:text-xl"
+            class="cta-button cta-button--secondary ml-10 text-base lg:text-lg xl:text-xl"
             href="${resumeLink}"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,7 +57,7 @@ class HeroSection extends HTMLElement {
           </div>
           <nav>
             <a
-              class="contact-button block bg-slate-500 text-xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 xl:text-3xl"
+              class="cta-button cta-button--primary text-xl xl:text-3xl"
               href="${contactLink}"
               >${contactCta}</a
             >

@@ -11,7 +11,7 @@ class ProjectsSection extends HTMLElement {
         <h2 class="line mb-10">Featured Projects</h2>
         <div id="projects-container"></div>
         <a
-          class="contact-button mt-15 block self-center bg-slate-500 text-xl font-medium text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-slate-600 lg:text-3xl"
+          class="cta-button cta-button--primary mt-15 self-center text-xl lg:text-3xl"
           href="https://github.com/gofhilman"
         >
           See other projects
