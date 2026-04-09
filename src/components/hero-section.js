@@ -28,7 +28,7 @@ class HeroSection extends HTMLElement {
             ><span>a </span><span id="typing"></span><span id="cursor"></span
           ></span>
         </h2>
-        <div class="my-6 flex flex-col items-start gap-4 xl:mr-30">
+        <div class="my-6 ml-4 flex flex-col items-start gap-4 lg:ml-0 xl:mr-30">
           <p
             class="border-l-10 border-slate-500 px-10 py-5 text-base/normal lg:text-lg/normal xl:text-xl/normal"
           >
