@@ -86,7 +86,7 @@
   #projects,
   #blog,
   #contact {
-    @apply px-[8px] lg:px-[100px];
+    @apply px-[20px] lg:px-[100px];
   }
 
   #projects article {

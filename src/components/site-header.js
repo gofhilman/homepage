@@ -7,10 +7,10 @@ class SiteHeader extends HTMLElement {
 
     this.innerHTML = `
       <header
-        class="progress-bar fixed inset-x-0 top-0 z-1 flex items-center justify-between bg-white/20 px-[10px] py-[20px] backdrop-blur-sm lg:px-[50px] lg:py-[18px]"
+        class="progress-bar fixed inset-x-0 top-0 z-1 flex items-center justify-between bg-white/20 px-[10px] py-[20px] backdrop-blur-sm md:px-[50px] md:py-[18px]"
       >
         <h1
-          class="mr-3 text-base font-semibold whitespace-nowrap lg:mr-10 lg:text-3xl"
+          class="mr-3 text-base font-semibold whitespace-nowrap md:mr-10 md:text-3xl"
         >
           <a href="/">
             <pre class="font-sans">&lt; <span id="head-typing"></span
@@ -19,7 +19,7 @@ class SiteHeader extends HTMLElement {
         </h1>
         <nav>
           <ul
-            class="flex items-center justify-center gap-x-2 text-sm font-medium lg:gap-x-5 lg:text-2xl"
+            class="flex items-center justify-center gap-x-2 text-sm font-medium md:gap-x-5 md:text-2xl"
           >
             ${navLinks
               .map(
