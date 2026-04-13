@@ -1,6 +1,6 @@
 import EmblaCarousel from "embla-carousel";
 import Autoplay from "embla-carousel-autoplay";
-import webBox from "../assets/web-box.svg";
+import globe from "../assets/globe.svg";
 import chevronLeft from "../assets/square-chevron-left.svg";
 import chevronRight from "../assets/square-chevron-right.svg";
 
@@ -65,15 +65,24 @@ class ProjectItem extends HTMLElement {
             )
             .join("")}
         </div>
-        <div>
-          <a href="${liveLink}">
-            <div class="center-icon">
-              <img class="big-icon" src="${webBox}" alt="Web icon" />
-              View live
-            </div>
+        <div class="project-actions">
+          <a
+            class="project-action project-action--primary"
+            href="${liveLink}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img class="project-action__icon" src="${globe}" alt="" />
+            <span>View live</span>
           </a>
-          <a href="${sourceLink}">
-            <div><i class="devicon-github-original"></i> Source</div>
+          <a
+            class="project-action project-action--secondary"
+            href="${sourceLink}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="devicon-github-original" aria-hidden="true"></i>
+            <span>Source code</span>
           </a>
         </div>
       </article>
