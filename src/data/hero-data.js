@@ -11,7 +11,7 @@ DevOps practices.`,
   profileAlt: "A portrait of Hilman Fikry",
   resumeCta: "Download resume",
   resumeLink:
-    "https://1drv.ms/f/c/06767bee76cede9f/IgCTQGUphvBXRZkrkcgM4x_5AedOqTBySaKYCaiMd8t9x4w?e=4PyhrI",
+    "https://1drv.ms/f/c/06767bee76cede9f/IgAYQ_J4fEmXTaKjAlJff_mOAT7xSpQp1qjDxL5EFs_c30U?e=YkfNNA",
   contactCta: "Contact me",
   contactLink: "#contact",
 };
